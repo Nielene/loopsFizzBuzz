@@ -1,0 +1,27 @@
+<!-- Go through all num from 1 to 100
+If multiple of 3, print fizz
+5 = buzz
+3 and 5 = fizz buzz
+Print it out on webpage. -->
+
+<h1 id="display"></h1>
+
+<script>
+	var num = 1
+	while(num<=100){
+		if(num%3==0 && num%5==0){
+			document.getElementById("display").innerHTML += "FizzBuzz" +"<br>";	
+		}
+		else if(num%3==0){
+			document.getElementById("display").innerHTML += "Fizz" +"<br>";	
+		}
+		else if(num%5==0){
+			document.getElementById("display").innerHTML += "Buzz" +"<br>";		
+		}
+		else{
+			document.getElementById("display").innerHTML += num +"<br>";	
+		}
+		console.log(num);
+		num++;
+	}
+</script>
